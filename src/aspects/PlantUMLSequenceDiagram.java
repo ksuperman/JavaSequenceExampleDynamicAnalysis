@@ -86,13 +86,3 @@ public class PlantUMLSequenceDiagram implements SequenceDiagramGenerator{
 	}
 
 }
-
-
-/*
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Current Stack contents are ===> 
-Current Stack contents size are ===> 6
-Programmer : Compile and Execute()
-MainClass : public static main("Command Line Argument1") ======> previous
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-*/

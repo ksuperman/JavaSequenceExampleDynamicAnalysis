@@ -7,14 +7,23 @@ public class SecondClass {
 		thirdclass.thirdmethod();
 	}
 	
-	private void secondInnerMethod() {
+	public void secondInnerMethod() {
 		secondNestedMethod();
 		System.out.println("Second");
 	}
 	
-	private void secondNestedMethod() {
+	public void secondNestedMethod() {
 		ThirdClass thirdclass = new ThirdClass();
 		thirdclass.thirdmethod();
 		System.out.println("Second nested");
+	}
+	
+	public int secondNormalMethod() {
+		secondSubNormalMethod();
+		return 0;
+	}
+	
+	public boolean secondSubNormalMethod() {
+		return true;
 	}
 }
