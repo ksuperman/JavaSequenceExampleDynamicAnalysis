@@ -20,16 +20,18 @@ public class MethodTracer{
 		ArrayList<String> methodmodifiersArr = new ArrayList<String>(Arrays.asList(methodModifiers.split(" ")));
 		ArrayList<String> methodParametersArr = new ArrayList<String>();
 		for(Object parameter : methodparameters) {
-			if(parameter instanceof int[]){
-				for(int number : (int[])parameter) {
-					methodParametersArr.add(Integer.toString(number));
-				}
-			}else if(parameter instanceof String[]) {
-				for(String param : (String[])parameter) {
-					methodParametersArr.add(param);
-				}
-			}else {
-				methodParametersArr.add(parameter.toString());
+			if(parameter != null) {
+				if(parameter instanceof int[]){
+					for(int number : (int[])parameter) {
+						methodParametersArr.add(Integer.toString(number));
+					}
+				}else if(parameter instanceof String[]) {
+					for(String param : (String[])parameter) {
+						methodParametersArr.add(param);
+					}
+				}else {
+					methodParametersArr.add(parameter.toString());
+				}	
 			}
 		}
 		

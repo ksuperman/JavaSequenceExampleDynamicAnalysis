@@ -54,7 +54,7 @@ public class PlantUMLSequenceDiagram implements SequenceDiagramGenerator{
 
 		parseStringBody += temp;
 		
-		renderSequenceDiagram();
+		//renderSequenceDiagram();
 	}
 	
 	public void endMethodFlow(Stack<MethodInstance> executionStacks) {
@@ -73,7 +73,8 @@ public class PlantUMLSequenceDiagram implements SequenceDiagramGenerator{
 
 		parseStringBody += temp;
 		
-		renderSequenceDiagram();
+		if(executionStacks.size() <= 3)
+			renderSequenceDiagram();
 	}
 	
 	public void renderSequenceDiagram() {

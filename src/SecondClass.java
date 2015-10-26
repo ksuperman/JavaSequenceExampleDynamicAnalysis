@@ -4,7 +4,6 @@ public class SecondClass {
 	public void secondMethod(String test,String test2) {
 		secondInnerMethod();
 		thirdclass.thirdmethod();
-		thirdclass.thirdmethod();
 	}
 	
 	public void secondInnerMethod() {
