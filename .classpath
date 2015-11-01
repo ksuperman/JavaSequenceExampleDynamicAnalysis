@@ -16,7 +16,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/plantuml.jar"/>
 	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/rakshithk/workspace/UMLClassDiagramGenerator/lib/plantuml.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

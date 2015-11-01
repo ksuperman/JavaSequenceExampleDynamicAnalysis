@@ -9,6 +9,7 @@ import net.sourceforge.plantuml.SourceStringReader;
 public class PlantUMLSequenceDiagram implements SequenceDiagramGenerator{
 	
 	private static String parseStringBody = "";
+	private final String homePath = System.getenv("HOME") + "/sequencediagram.png";
 	
 	public PlantUMLSequenceDiagram() {
 		parseStringBody = "";
@@ -80,7 +81,7 @@ public class PlantUMLSequenceDiagram implements SequenceDiagramGenerator{
 	public void renderSequenceDiagram() {
 		try {
 			SourceStringReader reader = new SourceStringReader(getParseString());
-			String desc = reader.generateImage(new File("/home/rakshithk/sequencediagram.png"));
+			String desc = reader.generateImage(new File(homePath));//"/home/rakshithk/sequencediagram.png"
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
